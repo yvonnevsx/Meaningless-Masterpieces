@@ -1,0 +1,6 @@
+<!-- res/drawable/filter_item_selected_background.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <solid android:color="@color/blue"/>
+    <!-- You can customize other properties like corner radius, stroke, etc. as per your design -->
+</shape>

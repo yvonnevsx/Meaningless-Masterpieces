@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundBlue"
+    android:padding="0dp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/imageCard"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        app:cardCornerRadius="16dp"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/photoImageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/artwork"
+            android:scaleType="centerCrop" />
+
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/backArrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:elevation="4dp"
+        android:src="@drawable/ic_back_arrow"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewYourArt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Art"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <ImageView
+        android:id="@+id/artinfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="232dp"
+        android:elevation="2dp"
+        android:src="@drawable/element_post2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+        android:id="@+id/buttonGenerateTitle"
+        android:layout_width="165dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="155dp"
+        android:background="@drawable/rounded_button"
+        android:clickable="true"
+        android:drawablePadding="10dp"
+        android:focusable="true"
+        android:padding="0dp"
+        android:text="Generate"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        app:flow_horizontalAlign="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/artinfo" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="80dp"
+        android:elevation="8dp"
+        android:text="Title"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/buttonGenerateTitle" />
+
+    <TextView
+        android:id="@+id/textViewArtsyDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="20dp"
+        android:elevation="8dp"
+        android:text="Title Description"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title" />
+
+<!--    <Spinner-->
+<!--        android:id="@+id/categorySpinner"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:padding="8dp"-->
+<!--        android:elevation="8dp"-->
+<!--        android:background="@drawable/rounded_button"-->
+<!--        android:popupBackground="@drawable/filter_item_default_background"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/textViewArtsyDescription" />-->
+
+    <TextView
+        android:id="@+id/categoryTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:elevation="8dp"
+        android:text="Select a Category"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewArtsyDescription" />
+
+    <com.google.android.flexbox.FlexboxLayout
+        android:id="@+id/tagsFlexboxLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:flexWrap="wrap"
+        android:elevation="8dp"
+        app:justifyContent="center"
+        app:alignItems="stretch"
+        app:layout_constraintTop_toBottomOf="@id/categoryTitle"
+        android:padding="16dp">
+    </com.google.android.flexbox.FlexboxLayout>
+
+    <Button
+        android:id="@+id/buttonPost"
+        android:layout_width="110dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="540dp"
+        android:background="@drawable/rounded_button"
+        android:elevation="8dp"
+        android:text="POST"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/artinfo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="ButtonBlueStyle" parent="Widget.AppCompat.Button">
+        <item name="android:background">@drawable/rounded_button</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <style name="NavBarStyling" parent="Widget.Design.BottomNavigationView">
+        <item name="android:background">@drawable/rounded_corners</item>
+        <item name="android:backgroundTint">@color/lightGray</item>
+    </style>
+
+</resources>

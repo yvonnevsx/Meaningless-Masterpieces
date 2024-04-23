@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Meaningless Masterpieces</string>
+    <string name="title_activity_main2">MainActivity2</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="take_photo">Take Photo</string>
+    <string name="capture_your_art">Capture Your Art</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="artwork">est</string>
+    <string name="image_description" />
+    <string name="add_art" />
+    <string name="art_description" />
+    <string name="profile">Profile</string>
+    <string name="art_creation">Art Creation</string>
+    <string name="gallery">Gallery</string>
+</resources>
