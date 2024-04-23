@@ -93,7 +93,7 @@ class PhotoDisplayActivity : AppCompatActivity() {
     private fun queryOpenAI(prompt: String, imageBase64: String, onResponse: (String) -> Unit) {
         CoroutineScope(Dispatchers.IO).launch {
             val url = URL("https://api.openai.com/v1/chat/completions")
-            val apiKey = "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" // Make sure to secure your API key
+            val apiKey = "APIKEY"
             val messages = """
             [
                 {"role": "system", "content": "You are a helpful assistant."},
