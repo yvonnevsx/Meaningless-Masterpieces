@@ -4,6 +4,9 @@
 
 Meaningless Masterpieces is an application created with Kotlin and Android studio. Built by two Smart-Mobile students at FICT in Eindhoven. It uses camera and AI functionalities to provide photos taken with a meaningful backstory.
 
+## Demo
+https://www.youtube.com/watch?v=6hU2KstBnnk
+
 ## Table of Contents
 
 - [Introduction](#introduction)
